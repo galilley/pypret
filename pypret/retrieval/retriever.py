@@ -106,7 +106,7 @@ class BaseRetriever(io.IO, metaclass=MetaIORetriever):
 
     def _retrieve_begin(self, measurement, initial_guess, weights):
         pnps = self.pnps
-        if not np.all(pnps.process_w == measurement.axes[1]):
+        if not np.allclose(pnps.process_w, measurement.axes[1]):
             raise ValueError("Measurement has to lie on simulation grid!")
         # Store measurement
         self.measurement = measurement
