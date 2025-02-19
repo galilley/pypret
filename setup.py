@@ -33,7 +33,7 @@ metadata = dict(
     author_email="",
     description=("Python for ultrashort laser pulse retrieval "),
     keywords=["photonic", "ultra-short pulses", "field"],
-    packages=["pypret", "doc", "scripts"],
+    packages=["pypret"],
     long_description=open("README.md").read(),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
